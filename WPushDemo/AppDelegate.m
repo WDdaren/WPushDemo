@@ -6,6 +6,7 @@
 //  Copyright © 2017年 wd. All rights reserved.
 //
 
+#import "AppDelegate+Push.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self pushApplication:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

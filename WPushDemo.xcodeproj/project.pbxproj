@@ -15,6 +15,10 @@
 		335B7E4A1E95E4CF00FADFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B7E481E95E4CF00FADFE7 /* LaunchScreen.storyboard */; };
 		335B7E551E95E4CF00FADFE7 /* WPushDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B7E541E95E4CF00FADFE7 /* WPushDemoTests.m */; };
 		335B7E601E95E4CF00FADFE7 /* WPushDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B7E5F1E95E4CF00FADFE7 /* WPushDemoUITests.m */; };
+		335B7E6F1E95E4E300FADFE7 /* AppDelegate+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B7E6E1E95E4E300FADFE7 /* AppDelegate+Push.m */; };
+		335B7E721E95E60F00FADFE7 /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 335B7E711E95E60F00FADFE7 /* qq.png */; };
+		335B7EA01E9628ED00FADFE7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B7E9F1E9628ED00FADFE7 /* NotificationService.m */; };
+		335B7EA41E9628ED00FADFE7 /* WPushServiceExtensionTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 335B7E9C1E9628ED00FADFE7 /* WPushServiceExtensionTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 335B7E361E95E4CF00FADFE7;
 			remoteInfo = WPushDemo;
 		};
+		335B7EA21E9628ED00FADFE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 335B7E2F1E95E4CF00FADFE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335B7E9B1E9628ED00FADFE7;
+			remoteInfo = WPushServiceExtensionTest;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		335B7E871E96241900FADFE7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				335B7EA41E9628ED00FADFE7 /* WPushServiceExtensionTest.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		335B7E371E95E4CF00FADFE7 /* WPushDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPushDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +76,14 @@
 		335B7E5B1E95E4CF00FADFE7 /* WPushDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPushDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		335B7E5F1E95E4CF00FADFE7 /* WPushDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPushDemoUITests.m; sourceTree = "<group>"; };
 		335B7E611E95E4CF00FADFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335B7E6D1E95E4E300FADFE7 /* AppDelegate+Push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Push.h"; sourceTree = "<group>"; };
+		335B7E6E1E95E4E300FADFE7 /* AppDelegate+Push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Push.m"; sourceTree = "<group>"; };
+		335B7E701E95E53200FADFE7 /* WPushDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WPushDemo-Prefix.pch"; sourceTree = "<group>"; };
+		335B7E711E95E60F00FADFE7 /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
+		335B7E9C1E9628ED00FADFE7 /* WPushServiceExtensionTest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WPushServiceExtensionTest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		335B7E9E1E9628ED00FADFE7 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		335B7E9F1E9628ED00FADFE7 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		335B7EA11E9628ED00FADFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		335B7E991E9628ED00FADFE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +124,7 @@
 				335B7E391E95E4CF00FADFE7 /* WPushDemo */,
 				335B7E531E95E4CF00FADFE7 /* WPushDemoTests */,
 				335B7E5E1E95E4CF00FADFE7 /* WPushDemoUITests */,
+				335B7E9D1E9628ED00FADFE7 /* WPushServiceExtensionTest */,
 				335B7E381E95E4CF00FADFE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +135,7 @@
 				335B7E371E95E4CF00FADFE7 /* WPushDemo.app */,
 				335B7E501E95E4CF00FADFE7 /* WPushDemoTests.xctest */,
 				335B7E5B1E95E4CF00FADFE7 /* WPushDemoUITests.xctest */,
+				335B7E9C1E9628ED00FADFE7 /* WPushServiceExtensionTest.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +143,10 @@
 		335B7E391E95E4CF00FADFE7 /* WPushDemo */ = {
 			isa = PBXGroup;
 			children = (
+				335B7E711E95E60F00FADFE7 /* qq.png */,
+				335B7E701E95E53200FADFE7 /* WPushDemo-Prefix.pch */,
+				335B7E6D1E95E4E300FADFE7 /* AppDelegate+Push.h */,
+				335B7E6E1E95E4E300FADFE7 /* AppDelegate+Push.m */,
 				335B7E3D1E95E4CF00FADFE7 /* AppDelegate.h */,
 				335B7E3E1E95E4CF00FADFE7 /* AppDelegate.m */,
 				335B7E401E95E4CF00FADFE7 /* ViewController.h */,
@@ -140,6 +186,16 @@
 			path = WPushDemoUITests;
 			sourceTree = "<group>";
 		};
+		335B7E9D1E9628ED00FADFE7 /* WPushServiceExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				335B7E9E1E9628ED00FADFE7 /* NotificationService.h */,
+				335B7E9F1E9628ED00FADFE7 /* NotificationService.m */,
+				335B7EA11E9628ED00FADFE7 /* Info.plist */,
+			);
+			path = WPushServiceExtensionTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +206,12 @@
 				335B7E331E95E4CF00FADFE7 /* Sources */,
 				335B7E341E95E4CF00FADFE7 /* Frameworks */,
 				335B7E351E95E4CF00FADFE7 /* Resources */,
+				335B7E871E96241900FADFE7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				335B7EA31E9628ED00FADFE7 /* PBXTargetDependency */,
 			);
 			name = WPushDemo;
 			productName = WPushDemo;
@@ -196,6 +254,23 @@
 			productReference = 335B7E5B1E95E4CF00FADFE7 /* WPushDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		335B7E9B1E9628ED00FADFE7 /* WPushServiceExtensionTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335B7EA51E9628ED00FADFE7 /* Build configuration list for PBXNativeTarget "WPushServiceExtensionTest" */;
+			buildPhases = (
+				335B7E981E9628ED00FADFE7 /* Sources */,
+				335B7E991E9628ED00FADFE7 /* Frameworks */,
+				335B7E9A1E9628ED00FADFE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPushServiceExtensionTest;
+			productName = WPushServiceExtensionTest;
+			productReference = 335B7E9C1E9628ED00FADFE7 /* WPushServiceExtensionTest.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +294,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 335B7E361E95E4CF00FADFE7;
 					};
+					335B7E9B1E9628ED00FADFE7 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 335B7E321E95E4CF00FADFE7 /* Build configuration list for PBXProject "WPushDemo" */;
@@ -237,6 +316,7 @@
 				335B7E361E95E4CF00FADFE7 /* WPushDemo */,
 				335B7E4F1E95E4CF00FADFE7 /* WPushDemoTests */,
 				335B7E5A1E95E4CF00FADFE7 /* WPushDemoUITests */,
+				335B7E9B1E9628ED00FADFE7 /* WPushServiceExtensionTest */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +329,7 @@
 				335B7E4A1E95E4CF00FADFE7 /* LaunchScreen.storyboard in Resources */,
 				335B7E471E95E4CF00FADFE7 /* Assets.xcassets in Resources */,
 				335B7E451E95E4CF00FADFE7 /* Main.storyboard in Resources */,
+				335B7E721E95E60F00FADFE7 /* qq.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +347,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		335B7E9A1E9628ED00FADFE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335B7E6F1E95E4E300FADFE7 /* AppDelegate+Push.m in Sources */,
 				335B7E421E95E4CF00FADFE7 /* ViewController.m in Sources */,
 				335B7E3F1E95E4CF00FADFE7 /* AppDelegate.m in Sources */,
 				335B7E3C1E95E4CF00FADFE7 /* main.m in Sources */,
@@ -295,6 +384,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		335B7E981E9628ED00FADFE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B7EA01E9628ED00FADFE7 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 335B7E361E95E4CF00FADFE7 /* WPushDemo */;
 			targetProxy = 335B7E5C1E95E4CF00FADFE7 /* PBXContainerItemProxy */;
+		};
+		335B7EA31E9628ED00FADFE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335B7E9B1E9628ED00FADFE7 /* WPushServiceExtensionTest */;
+			targetProxy = 335B7EA21E9628ED00FADFE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,7 +528,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/WPushDemo/WPushDemo-Prefix.pch";
 				INFOPLIST_FILE = WPushDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hytera.WPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +541,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/WPushDemo/WPushDemo-Prefix.pch";
 				INFOPLIST_FILE = WPushDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hytera.WPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +596,28 @@
 			};
 			name = Release;
 		};
+		335B7EA61E9628ED00FADFE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPushServiceExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hytera.WPushDemo.WPushServiceExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		335B7EA71E9628ED00FADFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPushServiceExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hytera.WPushDemo.WPushServiceExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +651,14 @@
 			buildConfigurations = (
 				335B7E6B1E95E4CF00FADFE7 /* Debug */,
 				335B7E6C1E95E4CF00FADFE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		335B7EA51E9628ED00FADFE7 /* Build configuration list for PBXNativeTarget "WPushServiceExtensionTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335B7EA61E9628ED00FADFE7 /* Debug */,
+				335B7EA71E9628ED00FADFE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
